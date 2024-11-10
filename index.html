@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Professional Resume Builder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- <header>
+    <h1>Build Your Professional Resume</h1>
+    <p>Generate a standout resume with just a few simple steps.</p>
+  </header> -->
+
+  <section id="resume-builder">
+    <form id="resume-form">
+      <!-- Profile Picture Section -->
+      <div class="form-section">
+        <label for="profile-picture">Profile Picture</label>
+        <input type="file" id="profile-picture" name="profile-picture">
+      </div>
+
+      <!-- About Section -->
+      <div class="form-section">
+        <label for="about">About Me</label>
+        <textarea id="about" name="about" placeholder="Tell us about yourself" required></textarea>
+      </div>
+
+      <!-- Name Section -->
+      <div class="form-section">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+      </div>
+
+      <!-- Designation Section -->
+      <div class="form-section">
+        <label for="designation">Designation</label>
+        <input type="text" id="designation" name="designation" placeholder="Your current job title" required>
+      </div>
+
+      <!-- Contact Info Section -->
+      <div class="form-section">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Your email address" required>
+      </div>
+      <div class="form-section">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="Your phone number" required>
+      </div>
+
+      <!-- Education Section -->
+      <div class="form-section">
+        <label for="education">Education</label>
+        <input type="text" id="education" name="education" placeholder="Your degree/qualification">
+        <input type="date" id="start-year" name="start-year" placeholder="Start Year" required>
+        <input type="date" id="end-year" name="end-year" placeholder="End Year" required>
+      </div>
+
+      <!-- Skills Section -->
+      <div class="form-section">
+        <label for="skills">Skills</label>
+        <input type="text" name="skill1" placeholder="Skill 1" required>
+        <input type="text" name="skill2" placeholder="Skill 2" required>
+        <input type="text" name="skill3" placeholder="Skill 3" required>
+        <input type="text" name="skill4" placeholder="Skill 4" required>
+        <input type="text" name="skill5" placeholder="Skill 5" required>
+      </div>
+
+      <!-- Languages Section -->
+      <div class="form-section">
+        <label for="languages">Languages</label>
+        <input type="text" name="language1" placeholder="Language 1" required>
+        <input type="text" name="language2" placeholder="Language 2" required>
+      </div>
+
+      <!-- Achievements Section -->
+      <div class="form-section">
+        <label for="achievements">Achievements</label>
+        <textarea id="achievements" name="achievements" placeholder="Your key achievements"></textarea>
+      </div>
+
+      <!-- Experience Section -->
+      <div class="form-section">
+        <label for="experience">Experience</label>
+        <textarea id="experience" name="experience" placeholder="Your work experience"></textarea>
+        <input type="date" id="experience-start-date" name="experience-start-date" placeholder="Start Date" required>
+        <input type="date" id="experience-end-date" name="experience-end-date" placeholder="End Date" required>
+      </div>
+
+      <button type="submit" id="generate-btn">Generate Resume</button>
+    </form>
+  </section>
+
+  <section id="generated-resume" style="display:none;">
+    <!-- <h2>Your Generated Resume</h2> -->
+    <div id="resume-content"></div>
+    <button onclick="window.print()">Print Resume</button>
+    <button id="edit-btn">Edit Resume</button>
+  </section>
+
+  <footer>
+    <p>© 2024 Resume Builder | All Rights Reserved</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
